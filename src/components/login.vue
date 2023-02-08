@@ -37,6 +37,7 @@ export default {
     getPrivateToken() {
       getPrivateToken().then((response) => {
         console.log(response.data.token);
+        this.getPrivateToken = localStorage.getItem('privateToken');
       });
     },
 
